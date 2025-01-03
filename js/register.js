@@ -12,7 +12,7 @@ if (localStorage.getItem('userInfo') !== null) {
 let isValid = false;
 
 if (sessionStorage.getItem('userEmail') != null) { {
-    location.href = "home.html";
+    location.href = "./home.html";
 }
                                                   
 document.forms[0].addEventListener('submit', (event) => {
@@ -26,7 +26,7 @@ document.forms[0].addEventListener('submit', (event) => {
             error.appendChild(existMsg);
         } else {
             getUserInfo();
-            location.href = 'index.html';
+            location.href = './index.html';
         }
     } else {
         alert("Please fill in all fields correctly.");
