@@ -1,0 +1,29 @@
+.signin-card{
+    max-width: 500px;
+}
+.signup-card{
+    max-width: 500px;
+}
+.signin-input{
+    height: 60px;
+    width: 100%;
+}
+.signup-input{
+    height: 40px;
+    width: 100%;
+}
+
+.line-text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.line-text::before,
+.line-text::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #a5a2a2;
+}
+.line-text span {
+    padding: 0 10px;
+}

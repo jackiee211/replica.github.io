@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <title>Feed | LinkedIn</title>
+    
+</head>
+<body class="d-flex justify-content-center flex-wrap" style="background-color: #f4f2ee ;">
+    <div class="container-fluid px-2 bg-light p-2 w-100 d-flex justify-content-center col-12 mb-lg-4">
+      <div class="px-lg-5 row d-flex justify-content-between align-content-center">
+          <div class="d-flex gap-3 align-items-center col-3 px-lg-5">
+            <img src="images/linkedin.png" alt="" width="30px" height="30px">
+            <form>
+              <input type="text" class="form-control border-dark border-1 d-none d-lg-block"placeholder="Search">
+            </form>
+          </div>
+          <div class="justify-content-end col-6  px-lg-5 d-none d-lg-flex border-end border-dark">
+            <a href="#" class="btn btn-outline-dark border-0">
+              <i class="fa-solid fa-house-chimney"></i>
+              Home
+            </a>
+            <a href="#" class="btn btn-light border-0 ">
+              <i class="fa-solid fa-globe"></i>
+             Network
+            </a>
+            <a href="#" class="btn btn-light  border-0">
+              <i class="fa-solid fa-business-time"></i>
+              Jobs
+            </a>
+            <a href="#" class="btn btn-light  border-0">
+              <i class="fa-solid fa-envelope"></i>
+              Messaging
+            </a>
+            <a href="#" class="btn btn-light  border-0">
+              <i class="fa-solid fa-bell"></i>
+              Notifications
+            </a>
+            <div class="d-flex justify-content-center align-items-center flex-column" id="welcome-message"></div>
+          </div>
+          <div class="col-lg-3 d-none d-lg-flex align-items-center">
+            <div class="d-flex flex-column">
+              <i class="fa-solid fa-border-none"></i>
+              <div class="dropdown">
+                <button class="btn border-0 dropdown-toggle" type="button" data-bs-toggle="dropdown" style="font-size: 14px; font-weight: 200;">
+                  for businesses
+                </button>
+                <ul class="dropdown-menu gap-3">
+                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-compass px-1"></i>sell</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-users-line px-1"></i>Groups</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-money-bills px-1"></i>Billing</a></li>
+                </ul>
+              </div>
+            </div>
+            <a class="btn text-warning-emphasis text-decoration-underline d-inline">reactivate <br> Premium: for 50% Off!</a>
+          </div>
+          <div class="gap-1 justify-content-end col-6  px-lg-5 d-flex d-lg-none align-items-center">
+            <a href="#" class="btn btn-light  border-0">
+              <i class="fa-solid fa-house-chimney"></i>
+            </a>
+            <a href="#" class="btn btn-light border-0 ">
+              <i class="fa-solid fa-globe"></i>
+            </a>
+            <a href="#" class="btn btn-light  border-0">
+              <i class="fa-solid fa-business-time"></i>
+            </a>
+            <a href="#" class="btn btn-light  border-0">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="#" class="btn btn-light  border-0">
+              <i class="fa-solid fa-bell"></i>
+            </a>
+            <div class="dropdown">
+              <button class="btn btn-light border-0 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <div id="user-icon"></div>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">profile</a></li>
+                <li><a class="dropdown-item" href="#" id="logoutBtn">Log out</a></li>
+              </ul>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="d-flex w-100 p-0 p-lg-5 justify-content-center flex-wrap gap-3">
+      <div class="d-flex flex-column col-12 col-md-3 col-lg-2 align-items-center">
+        <div class="bg-light shadow-sm" style="min-width: 350px; max-width: 450px;">
+          <div class="d-flex justify-content-center mb-5 w-auto position-relative rounded-top-3" style="background-color:#a0b4b7 ;height: 80px;">
+            <div style="width: fit-content; top: 40px;" id="user-icon2" class=" border-light border border-3 rounded-circle position-absolute">
+              <img src="" alt="user" class="rounded-circle d-lg-block" width="64px" height="64px">
+            </div>
+          </div>
+          <div class="name-link d-flex justify-content-center align-items-center flex-column border-bottom border-dark-subtle">
+              <a href="#" class="btn-link text-dark h5">Abdelrahman</a>
+              <p class="text-dark text-muted" style="font-size: 12px;">Beni Suef</p>
+          </div>
+          <div class="d-flex flex-column border-bottom border-dark-subtle">
+            <div class="d-flex justify-content-between align-items-center btn btn-light border-0 rounded-0">
+              <a class="btn" style="font-size: 12px;">Profile Viewers</a>
+              <a class="btn" style="font-size: 12px;">500+</a>
+            </div>
+              <div class="d-flex justify-content-between align-items-center btn btn-light border-0 rounded-0">
+                <a class="btn" style="font-size: 12px;">Post Impressions</a>
+                <a class="btn" style="font-size: 12px;">500+</a>
+              </div>
+          </div>
+          <div class="d-flex flex-column border-bottom border-dark-subtle">
+            <div class="d-flex flex-column btn btn-light border-0 rounded-0">
+              <small class="small text-muted text-start" style="font-size: 12px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, vitae.</small>
+              <div class="d-flex">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="" id="premium-chip-v2-medium" aria-hidden="true" role="none" width="24" height="24">
+                  <path d="M20.01 20.01c.63-.63.99-1.48.99-2.38V6.38C21 4.51 19.49 3 17.62 3H6.38c-.9 0-1.75.36-2.38.99l16.02 16.02z" fill="#e7a33e"></path>
+                  <path d="M3.99 3.99C3.36 4.62 3 5.48 3 6.38v11.25c0 1.87 1.51 3.38 3.38 3.38h11.25c.9 0 1.75-.36 2.38-.99L3.99 3.99z" fill="#c37d16"></path>
+                </svg>
+                <p class="d-inline" style="font-size: 12px;">Activate Premium For 4$</p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex rounded-bottom-2">
+            <div class="d-flex btn btn-light border-0 rounded-0 w-100">
+              <p><i class="fa-regular fa-bookmark"></i> Saved Items</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-column col-12 col-md-8 col-lg-6 text-center align-items-center gap-3" >
+        <div class="container bg-light border-dark-subtle shadow-sm border border-1 rounded-2 px-5 py-2 row d-flex justify-content-between align-items-center w-75" style="min-width: 400px;">
+          <div style="width: fit-content; top: 40px;" id="user-icon3" class="border-light border border-3 rounded-circle col-2">
+            </div>
+          <div class="border border-1 border-dark-subtle rounded-4 col-8 col-md-9 p-3" style="background-color: #f4f2ee;">
+            <p class="h5 text-start">Start a post</p>
+          </div>
+          <div class="row d-flex justify-content-between align-items-center">
+            <div class="btn btn-light col-4">
+              <i class="fa-regular fa-image text-primary"></i>
+              <p class="h6 d-inline">Media</p>
+            </div>
+            <div class="btn btn-light col-4">
+              <i class="fa-regular fa-calendar-days text-warning-emphasis"></i>
+              <p class="h6 d-inline">Event</p>
+            </div>
+            <div class="btn btn-light col-4">
+              <i class="fa-regular fa-newspaper  text-danger-emphasis"></i>
+              <p class="h6 d-inline">Write Article</p>
+            </div>
+        </div>
+        </div>
+        <div class="container bg-light border-dark-subtle shadow-sm border border-1 rounded-2 row d-flex justify-content-between align-items-center w-75" style="min-width: 400px;">
+          <div class="posts-container w-100">
+              <!-- ! posts load here -->
+          </div>
+          <div class="pagination-trigger"></div>
+        </div>
+      </div>
+
+
+      <div class="d-none d-lg-flex flex-lg-column col-12 col-lg-3">
+        <div class="bg-light shadow-sm rounded-3 p-3 mb-3">
+        <h5>People You May Know</h5>
+        <div class="d-flex justify-content-between align-items-center mb-3 flex-column align-items-lg-start">
+            <div class="d-flex align-items-center">
+                <img src="images/ahmed-hassan.jpeg" alt="User" class="rounded-circle" width="50" height="50">
+                <div class="ms-3">
+                    <h6 class="mb-0">Ahmed Hassan</h6>
+                    <p class="text-muted small mb-0">Marketing Specialist</p>
+                </div>
+            </div>
+            <button class="btn btn-light px-3 border mt-2">Connect</button>
+        </div>
+        <div class="d-flex justify-content-between align-items-center mb-3 flex-column align-items-lg-start">
+            <div class="d-flex align-items-center">
+                <img src="images/khrisna.jpg" alt="User" class="rounded-circle" width="50" height="50">
+                <div class="ms-3">
+                    <h6 class="mb-0">Khrisna Quiel</h6>
+                    <p class="text-muted small mb-0">UI Developer</p>
+                </div>
+            </div>
+            <button class="btn btn-light px-3 border mt-2">Connect</button>
+        </div>
+        <button class="btn btn-light p-0 w-100 text-dark">See all recommendations</button>
+    </div>
+      
+      <div class="row">
+            <a href="#" class="text-muted col-4">About</a>
+            <a href="#" class="text-muted col-4">Accessibility</a>
+            <a href="#" class="text-muted col-4">Help Center</a>
+            <a href="#" class="text-muted col-4">Privacy & Terms</a>
+            <a href="#" class="text-muted col-4">Advertise</a>
+            <a href="#" class="text-muted col-4">Careers</a>
+            <div class="col-12">
+              LinkedIn Corporation © 2025
+              <svg display="var(--hue-web-svg-display-light)">
+              <image href="https://static.licdn.com/aero-v1/sc/h/aahlc8ivbnmk0t3eyz8as5gvr" x="0" y="0" width="56" height="14"></image>
+            </svg>
+          </div>
+      </div>
+</div>
+</div>
+</div>
+</div>
+<!-- ! scripts -->
+<script src="/js/home.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
+<script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
