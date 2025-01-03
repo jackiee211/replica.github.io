@@ -8,7 +8,7 @@ let userData = [];
 let isValid = false;
 
 if (sessionStorage.getItem('userEmail') != null) { {
-    location.href = "./home.html";
+    location.href = "home.html";
 }
 };
 if (JSON.parse(localStorage.getItem('userInfo')) != null) {
