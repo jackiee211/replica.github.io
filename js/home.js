@@ -6,10 +6,9 @@ if (userName) {
     let userIcon = document.getElementById("user-icon");
     let userIcon2 = document.getElementById("user-icon2");
     let userIcon3 = document.getElementById("user-icon3");
-    const profileImgSrc = `images/${userName}.png`;
-    const defaultImgSrc = "images/default.png"; //
+    const defaultImgSrc = "images/default.png";
     userDisplay.innerHTML = `
-    <img src="${profileImgSrc}" onerror="this.src='${defaultImgSrc}'" alt="user" class="rounded-circle d-lg-block" width="24px" height="24px">
+    <img src="${userName}" onerror="this.src='${defaultImgSrc}'" alt="user" class="rounded-circle d-lg-block" width="24px" height="24px">
     <div class="dropdown">
               <button class="btn btn-light border-0 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               ${userName}
