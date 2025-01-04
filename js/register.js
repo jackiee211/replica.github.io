@@ -12,7 +12,7 @@ if (localStorage.getItem('userInfo') !== null) {
 let isValid = false;
 
 if (sessionStorage.getItem('userEmail') != null) {
-    location.href = "./home.html";
+    location.replace("./home.html");
 }
                                                   
 document.forms[0].addEventListener('submit', (event) => {
