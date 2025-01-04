@@ -30,7 +30,7 @@ if (userName) {
     <img src="images/${userName}.png" alt="user" class="rounded-circle d-lg-block" width="64px" height="64px">
     `;
 } else {
-    location.href = "index.html";
+    location.replace = "index.html";
 }
 
 const logoutBtn = document.getElementById("logoutBtn");
