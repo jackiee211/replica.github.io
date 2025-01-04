@@ -11,7 +11,7 @@ if (localStorage.getItem('userInfo') !== null) {
 
 let isValid = false;
 
-if (sessionStorage.getItem('userEmail') != null) { {
+if (sessionStorage.getItem('userEmail') != null) {
     location.href = "./home.html";
 }
                                                   
